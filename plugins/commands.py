@@ -37,14 +37,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('CHANNEL🔖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            InlineKeyboardButton('GROUP♻️', url='https://t.me/tg_bots_updates')
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ🔖', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl')
+            InlineKeyboardButton('Gʀᴏᴜᴘ♻️', url='https://t.me/cinemahubmoviesS')
             ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Oᴡɴᴇʀ♥️', url='https://t.me/MagnusTG')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=random.choice("https://telegra.ph/file/ed541c137956e4cd690e3.jpg","https://telegra.ph/file/e12d1510ec78e0a36f8cd.jpg","https://telegra.ph/file/dfcad196bfcf4bc85a650.jpg"),
+            photo=random.choice(https://telegra.ph/file/ed541c137956e4cd690e3.jpg https://telegra.ph/file/e12d1510ec78e0a36f8cd.jpg https://telegra.ph/file/dfcad196bfcf4bc85a650.jpg),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -75,14 +75,14 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('CHANNEL🔖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            InlineKeyboardButton('GROUP♻️', url='https://t.me/tg_bots_updates')
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ🔖', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Gʀᴏᴜᴘ♻️', url='https://t.me/tg_bots_updates')
             ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Oᴡɴᴇʀ♥️', url='https://t.me/MagnusTG')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=random.choice(https://telegra.ph/file/ed541c137956e4cd690e3.jpg https://telegra.ph/file/e12d1510ec78e0a36f8cd.jpg https://telegra.ph/file/dfcad196bfcf4bc85a650.jpg),),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
